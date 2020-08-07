@@ -300,3 +300,44 @@ img[src="img/toureiffel.jpg"] {
 	float: left;
 	background-color: #faf8d1;
 }
+
+/* A COMPLETER */
+
+/* DEBUT PAGE POSITION */
+
+.centre {
+	height: 200px;
+	width: 200px;
+	background-color: #6acafc;
+	margin: 0 auto;
+}
+
+.absolute {
+	height: 100px;
+	width: 100px;
+	background-color: yellow;
+	position: absolute;
+	top: 30%;
+	left: 10%;
+}
+
+/* quand c'est relatif, c'est par rapport au parent */
+.relative {
+	background-color: #2980B9;
+	width: 500px;
+	height: 500px;
+	position: relative;
+	left: 100px;
+	/* la position relative à la section dans laquelle se toruve cette div (la position est relative au parent) */
+	bottom: 10px;
+}
+/* quand c'est absolute c'est pas rapport au parent sauf si l'élément est danss une position relative */
+.relative div {
+/* contrairement à la div.absolute, cet élément ayant une position absolute étant placé dans une div.relative, cette div est absolue par rapport à son parent et non par rapport à body  */
+	background-color: #fff1a8;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 0;
+	right: 0;
+} 
