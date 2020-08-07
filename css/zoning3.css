@@ -1,0 +1,42 @@
+body {
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 1.8em;
+}
+
+.clear {
+    clear: both;
+}
+
+main {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.gauche {
+    float: left;
+    background-color: aqua;
+    width: 500px;
+    height: 600px;
+}
+.droite {
+    float: left;
+    background-color: aqua;
+    width: 500px;
+    height: 600px;
+}
+
+.peche {
+    background-color: rgb(255, 214, 216);
+    width: 1000px;
+    height: 10px;
+}
+
+footer {
+    background-color: rgb(213, 235, 181);
+}
+
+p {
+    padding: 5px;
+    margin: 0;
+}
