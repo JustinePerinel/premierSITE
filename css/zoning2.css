@@ -1,0 +1,58 @@
+/* font-family: 'Bad Script', cursive; */
+body {
+    margin: auto;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.clear {
+    clear: both;
+}
+
+#zoning2 {
+    background-color: rgb(246, 235, 255);
+    margin: 0 auto;
+    width: 1200px;
+    border: 5px double rebeccapurple;
+    border-radius: 35px;
+}
+
+#zoning2 header {
+    background-color: rgb(214, 189, 238);
+    width: 1200px;
+    height: 100px;
+    border-radius: 35px 35px 0 0 ;
+}
+
+aside {
+    float: left;
+    background-color: rgb(199, 156, 240);
+    width: 200px;
+    height: 400px;
+}
+
+#zoning2 section {
+    float: left;
+    background-color: rgb(162, 112, 209);
+    width: 800px;
+    height: 400px;
+}
+
+footer {
+    height: 100px;
+    width: 1200px;
+    /* margin: 0; */
+    background-color: rgb(214, 189, 238);
+    border-radius: 0 0 35px 35px;
+}
+
+p,h1 {
+    font-family: 'Bad Script', cursive;
+    margin: 0;
+    font-size: 24px;
+}
+
+h1 {
+    color: rebeccapurple;
+    font-size: 36px;
+}

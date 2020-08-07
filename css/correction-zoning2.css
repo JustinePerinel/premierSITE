@@ -1,0 +1,47 @@
+/* font-family: 'Bad Script', cursive; */
+
+.clear {
+    clear: both;
+}
+body {
+    background: url(../img/ciel.jpg) no-repeat;
+    background-size: cover;
+    font-size: 1.8em;
+    font-family: 'Bad Script', cursive;
+}
+
+#zoning2 {
+    width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+#zoning2 header {
+    background-color: #00BFFF;
+    height: 100px;
+}
+
+#zoning2 aside {
+    background-color: #80c0e0;
+    height: 300px;
+    width: 200px;
+    float: left;
+}
+
+#zoning2 .milieu {
+    background-color: #1E90FF;
+    height: 300px;
+    width: 800px;
+    float: left;
+}
+
+footer {
+    width: 1200px;
+}
+
+footer p {
+    padding: 10px;
+    margin: 0;
+    height: 150px;
+    background-color: #00BFFF;
+}
