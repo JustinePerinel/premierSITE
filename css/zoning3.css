@@ -2,6 +2,7 @@ body {
     text-align: center;
     box-sizing: border-box;
     font-size: 1.8em;
+    background-image: url(../img/concrete-texture.png);
 }
 
 .clear {

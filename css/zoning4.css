@@ -1,0 +1,45 @@
+body {
+    background-image: url(../img/concrete-texture.png);
+    margin: auto;
+    text-align: center;
+}
+
+#zoning4 {
+    background-color: #fff;
+    width: 800px;
+    margin: 15px auto;
+}
+
+#zoning4 header {
+    background-color: rgb(1, 90, 90);
+    height: 100px;
+    margin-bottom: 0;
+}
+
+#zoning4 nav {
+    background-color: rgb(1, 122, 122);    
+    height: 60px;
+}
+
+#zoning4 .header-nav {
+    display: inline-block;
+    background-color: #fff;
+    color: grey;
+}
+
+#zoning4 section {
+    width: 760px;
+    border: 20px solid #fff;
+    background: rgb(0, 197, 197);
+    height: 500px;
+}
+
+#zoning4 footer {
+    background-color: rgb(1, 243, 243);
+    width: 800px;
+    height: 60px;
+}
+
+#zoning4 p {
+    display: inline-block;
+}
