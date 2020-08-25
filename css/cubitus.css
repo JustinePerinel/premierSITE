@@ -1,0 +1,44 @@
+body {
+    background-color: rgb(250, 248, 221);
+    color: white;
+}
+
+.clear {
+    clear: both;
+}
+
+.rose, .corail {
+    text-align: center;
+    width: 10em;
+    height: 10em;
+    border-radius: 10% 5% 40% 0%;
+    border: 3px solid white;
+    float: left;
+    margin: 1px;
+}
+
+.corail {
+background-color: rgb(236, 112, 112);
+}
+
+.rose {
+    background-color: pink;
+}
+div p {
+    line-height: 7em;
+    color: seashell;
+}
+
+p {
+    color: rgb(236, 112, 112);
+}
+
+a {
+    color: rgb(175, 17, 17);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(148, 32, 32);
+    font-weight: bolder;
+}

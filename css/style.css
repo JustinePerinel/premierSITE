@@ -419,7 +419,7 @@ img[src="img/toureiffel.jpg"] {
 
 #zoning4 nav {
     background-color: rgb(1, 122, 122);    
-	height: 60px;
+	/* height: 60px; */
 	border: none;
 }
 
@@ -446,6 +446,66 @@ img[src="img/toureiffel.jpg"] {
 #zoning4 p {
     display: inline-block;
 }
+
+/* ZONING 5 */
+
+#zoning5 {
+	background: #ff9933;
+	margin: 0 auto;
+	width: 1000px;
+	color: white;
+	text-align: center;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+   
+#zoning5 header {
+	background: #FED0A6;
+	height: 100px;
+	
+}
+
+#zoning5 nav {
+	background: #FFCC85;
+	height: 50px;
+	border: none;
+	/* border-bottom: 8px solid #ffa43b; */
+}
+
+#zoning5 section {
+	background-color: seashell;
+	margin: 20px;
+	padding: 0;
+}
+
+#zoning5 .section .z1, .z2, .z3, .z4 {
+	height: 250px;
+	width: 50%;
+	float: left;
+}
+
+#zoning5 .section .z1, .z2, .z3, .z4 p {
+	line-height: 250px;
+}
+
+/* line-height à la taille de l'élément dans le cas d'un texte tenant sur une ligne pour centrer le texte  */
+
+#zoning5 .z1, .z4 {
+	background: #FDB658;
+}
+
+#zoning5 .z2, .z3 {
+	background: #FED0A6;
+}
+
+#zoning5 footer {
+	background: #FFBC71;
+}
+
+#zoning5 p {
+	display: inline-block;
+}
+
 
 /* A COMPLETER */
 

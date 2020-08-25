@@ -1,0 +1,112 @@
+@charset "UTF-8";
+/* reset simple  */
+/* l'étoile signifie tout (all) */
+/* tous les éléments sont taillés de façon plus intuitive, ils concerveront la taille que nous leur donnerons */
+* {
+	box-sizing: border-box; 
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+.main {
+    width: 1000px;
+    margin: 15px auto 0;
+    text-align: center;
+    line-height: 2em;
+}
+
+.clear {
+    clear: both;
+}
+
+.petit-haut {
+    width: 25%;
+    height: 100px;
+    background-color: #ff3355;
+    float: left;
+}
+
+.grand-haut {
+    width: 50%;
+    height: 100px;
+    background-color: lightseagreen;
+    float: left;
+}
+
+nav {
+    background-color: lightblue;
+    height: 45px;
+}
+
+aside {
+    background-color: rgb(231, 193, 231);
+    width: 25%;
+    height: 500px;
+    float: left;
+}
+
+.a, .b {
+    width: 37.5%;
+    float: left;
+    height: 205px;
+}
+
+.a {
+    background-color: rgb(236, 197, 164);
+}
+
+.b {
+    background-color: rgb(199, 177, 177);
+}
+
+.diapo {
+    width: 75%;
+    background-color: lightgreen;
+    float: left;
+    height: 205px;
+}
+
+.c, .d, .e, .f {
+    width: 18.75%;
+    height: 90px;
+    float: left;
+}
+
+.c {
+    background-color: green;
+}
+
+.d {
+    background-color: rgb(165, 75, 201);
+}
+
+.e {
+    background-color: orange;
+}
+
+.f {
+    background-color: rgb(214, 52, 92);
+}
+
+footer {
+    background-color: rgb(185, 7, 185);
+    height: 45px;
+}

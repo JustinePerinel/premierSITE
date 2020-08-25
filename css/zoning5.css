@@ -5,10 +5,8 @@
  color: white;
  height: 730px;
  text-align: center;
-}
-
-#zoning5 p {
-    display: inline-block;
+ font-size: 1.3em;
+ font-weight: bold;
 }
 
 #zoning5 header {
@@ -30,30 +28,16 @@
     height: 500px;
 }
 
-#zoning5 .a {
+#zoning5 .a,#zoning5 .d {
     float: left;
     background: #FDB658;
     height: 250px;
     width: 380px;
 }
 
-#zoning5 .b {
+#zoning5 .b,#zoning5 .c {
     float: left;
     background: #FED0A6;
-    height: 250px;
-    width: 380px;
-}
-
-#zoning5 .c {
-    float: left;
-    background: #FED0A6;
-    height: 250px;
-    width: 380px;
-}
-
-#zoning5 .d {
-    float: left;
-    background: #FDB658;
     height: 250px;
     width: 380px;
 }
@@ -61,4 +45,8 @@
 #zoning5 footer {
     background: #FFBC71;
     height: 60px;
+}
+
+#zoning5 p {
+    display: inline-block;
 }
