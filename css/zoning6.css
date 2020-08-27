@@ -26,87 +26,87 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-.main {
+.zoning6 {
     width: 1000px;
     margin: 15px auto 0;
     text-align: center;
     line-height: 2em;
 }
 
-.clear {
+.zoning6 .clear {
     clear: both;
 }
 
-.petit-haut {
+.zoning6 .petit-haut {
     width: 25%;
     height: 100px;
     background-color: #ff3355;
     float: left;
 }
 
-.grand-haut {
+.zoning6 .grand-haut {
     width: 50%;
     height: 100px;
     background-color: lightseagreen;
     float: left;
 }
 
-nav {
+.zoning6 nav {
     background-color: lightblue;
     height: 45px;
 }
 
-aside {
+.zoning6 aside {
     background-color: rgb(231, 193, 231);
     width: 25%;
     height: 500px;
     float: left;
 }
 
-.a, .b {
+.zoning6 .a, .b {
     width: 37.5%;
     float: left;
     height: 205px;
 }
 
-.a {
+.zoning6 .a {
     background-color: rgb(236, 197, 164);
 }
 
-.b {
+.zoning6 .b {
     background-color: rgb(199, 177, 177);
 }
 
-.diapo {
+.zoning6 .diapo {
     width: 75%;
     background-color: lightgreen;
     float: left;
     height: 205px;
 }
 
-.c, .d, .e, .f {
+.zoning6 .c, .d, .e, .f {
     width: 18.75%;
     height: 90px;
     float: left;
 }
 
-.c {
+.zoning6 .c {
     background-color: green;
 }
 
-.d {
+.zoning6 .d {
     background-color: rgb(165, 75, 201);
 }
 
-.e {
+.zoning6 .e {
     background-color: orange;
 }
 
-.f {
+.zoning6 .f {
     background-color: rgb(214, 52, 92);
 }
 
-footer {
+.zoning6 footer {
     background-color: rgb(185, 7, 185);
     height: 45px;
 }

@@ -37,7 +37,8 @@ font-family: 'Lemonada', cursive;
 font-family: 'Oswald', sans-serif;
 font-family: 'Courgette', cursive;
 font-family: 'Kaushan Script', cursive;    
-font-family: 'Berkshire Swash', cursive; */
+font-family: 'Berkshire Swash', cursive;    
+font-family: 'Righteous', cursive; */
 
 body {
 	background-image: url('../img/concrete-texture.png');
@@ -444,7 +445,7 @@ img[src="img/toureiffel.jpg"] {
 }
 
 #zoning4 p {
-    display: inline-block;
+	margin: 0;
 }
 
 /* ZONING 5 */
@@ -503,10 +504,108 @@ img[src="img/toureiffel.jpg"] {
 }
 
 #zoning5 p {
-	display: inline-block;
+	margin: 0;
 }
 
+/* ZONING 6 */
 
+.zoning6 {
+    width: 1000px;
+    margin: 15px auto 0;
+    text-align: center;
+	line-height: 2em;
+	color: #fff;
+	font-family: 'Righteous', cursive;
+}
+
+.zoning6 .petit-haut {
+    width: 25%;
+    height: 100px;
+    background-color: #F8BBD0;
+    float: left;
+}
+
+.zoning6 .grand-haut {
+    width: 50%;
+    height: 100px;
+    background-color: #F48FB1;
+    float: left;
+}
+
+.zoning6 nav {
+    background-color: #F06292;
+	min-height: 45px;
+	border: none;
+}
+
+.zoning6 nav a {
+	border: none;
+	background: none;
+	padding: 0 20px 0 20px;
+	margin: 0;
+	font-family: 'Righteous', cursive;
+	color: #fff;
+	font-size: 1.2em;
+}
+
+.zoning6 aside {
+	padding: 0;
+	margin: 0;
+    background-color: #EC407A;
+    width: 25%;
+    height: 500px;
+    float: left;
+}
+
+.zoning6 .a, .b {
+    width: 37.5%;
+    float: left;
+    height: 205px;
+}
+
+.zoning6 .a {
+    background-color: #fc82ab;
+}
+
+.zoning6 .b {
+    background-color: #AD1457;
+}
+
+.zoning6 .diapo {
+    width: 75%;
+    background-color: #fda9c7;
+    float: left;
+    height: 205px;
+}
+
+.zoning6 .c, .d, .e, .f {
+    width: 18.75%;
+    height: 90px;
+    float: left;
+}
+
+.zoning6 .c {
+    background-color: #F48FB1;
+}
+
+.zoning6 .d {
+    background-color: #EC407A;
+}
+
+.zoning6 .e {
+    background-color: #D81B60;
+}
+
+.zoning6 .f {
+    background-color: #AD1457;
+}
+
+.zoning6 footer {
+    background-color: #880E4F;
+	height: 45px;
+	padding: 0;
+	margin: 0;
+}
 /* A COMPLETER */
 
 /* DEBUT PAGE POSITION */
