@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Correction QCM Web Force 3</title>
+    <style>
+        body {
+            background-color: rgb(250, 223, 227);
+        }
+
+        main {
+            width: 900px;
+            margin: auto;
+            min-height: 500px;
+            background-color: rgb(253, 242, 244);
+        }
+
+        #en-tete {
+            height: 100px;
+            line-height: 100px;
+            background: ghostwhite;
+            text-align: center;
+        }
+
+        .bg-orange {
+            background: hotpink;
+            color: white;
+        }
+
+        .cercle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: #000;
+        }
+
+        q::before { 
+            content: "«";
+            color: blue;
+        }
+        q::after {
+            content: '»';
+            color: red;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        li::before {
+            content: "→ ";
+            color: indianred;
+        }
+
+        li::after {
+            content: "← ";
+            color: indianred;
+        }
+
+        /* position static, position qui ne change pas // position de base */
+        /* div {
+            position: static;
+            left: 50px;
+            margin: 10px;
+        } */
+    </style>
+</head>
+<body>
+    <main>
+        <div id="en-tete">
+            <h1>QCM - Web Force 3</h1>
+        </div>
+        <h2>Ceci est un titre 2 avec un mot en blanc et un fond <span class="bg-orange">rose</span></h2>
+        <div class="cercle"></div>
+        <hr>
+        <q> Quelques guillemets </q>, dit-il, <q> sont mieux que pas du tout </q>
+        <q>la vallée verte</q>
+        <ul>
+            <li>Menu1</li>
+            <li>Menu2</li>
+        </ul>
+    </main>
+</body>
+</html>

@@ -1,0 +1,51 @@
+body {
+    background-color: ivory;
+}
+
+main {
+    width: 1400px;
+    margin: auto;
+    background: white;
+    padding: 0 15px;
+}
+
+.principale {
+    margin: auto;
+    text-align: center;
+}
+
+img {
+    border: 7px double purple;
+}
+
+.contenant {
+    display: inline-block;
+    margin: 15px auto;
+    text-align: center;
+}
+
+.contenant p {
+    display: inline;
+    position: relative;
+    margin: 0 auto;
+    right: 140px;
+    top: -160px;
+    color: rgba(255, 255, 255, 0.959);
+}
+
+img:hover {
+    border: 7px double tan;
+}
+
+.contenant:hover {
+    font-size: 3em;
+    font-weight: bolder;
+    text-shadow: 0 10px 10px orangered;
+    color: white;
+    right: 100px;
+    top: -50px;
+}
+
+p.lorem {
+    background-color: lightblue;
+}
