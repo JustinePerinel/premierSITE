@@ -206,6 +206,8 @@ button {
 	right: 20px;
 }
 
+/* FIN DU STYLE PRINCIPAL */
+
 /* STYLE DE LA PAGE TEXTE */
 
 blockquote {
@@ -222,6 +224,8 @@ blockquote i {
 	color: #6acafc;
 	vertical-align: middle;
 }
+
+/* FIN STYLE PAGE TEXTE */
 
 /* DÉBUT STYLE IMAGES */
 
@@ -272,6 +276,8 @@ img[src="img/toureiffel.jpg"] {
 	transition: 1s;
 }
 
+/* FIN PAGE IMAGE */
+
 /* LA PAGE DE ZONING */
 /* ZONING 1 */
 #zoning1 {
@@ -293,7 +299,6 @@ img[src="img/toureiffel.jpg"] {
 	font-size: 1.9em;
 }
 
-
 #zoning1 aside {
 	padding: 0;
 	margin: 0;
@@ -302,6 +307,7 @@ img[src="img/toureiffel.jpg"] {
 	float: left;
 	background-color: #e0d501;
 }
+
 #zoning1 section {
 	padding: 0;
 	margin: 0;
@@ -606,14 +612,14 @@ img[src="img/toureiffel.jpg"] {
 	padding: 0;
 	margin: 0;
 }
-/* A COMPLETER */
+/* FIN PAGE ZONING */
 
 /* DEBUT PAGE POSITION */
 
 .centre {
 	height: 200px;
 	width: 200px;
-	background-color: #6acafc;
+	background-color: rgb(255, 187, 0);
 	margin: 0 auto;
 }
 
@@ -628,7 +634,7 @@ img[src="img/toureiffel.jpg"] {
 
 /* quand c'est relatif, c'est par rapport au parent */
 .relative {
-	background-color: #2980B9;
+	background-color: rgb(255, 115, 0);
 	width: 500px;
 	height: 500px;
 	position: relative;
@@ -639,10 +645,192 @@ img[src="img/toureiffel.jpg"] {
 /* quand c'est absolute c'est pas rapport au parent sauf si l'élément est danss une position relative */
 .relative div {
 /* contrairement à la div.absolute, cet élément ayant une position absolute étant placé dans une div.relative, cette div est absolue par rapport à son parent et non par rapport à body  */
-	background-color: #fff1a8;
+	background-color: rgb(255, 217, 0);
 	width: 100px;
 	height: 100px;
 	position: absolute;
 	top: 0;
 	right: 0;
 } 
+
+/* page position : POURCENTAGES */
+
+.trente {
+	width: 30%;
+	padding: 20px;
+	font-size: 22px;
+	background-color: rgb(255, 217, 0);
+	color: orange;
+}
+
+.cinquante {
+	width: 50%;
+	padding: 20px;
+	font-size: 22px;
+	background-color: rgb(255, 187, 0);
+	color: rgb(255, 115, 0);
+}
+
+.cent {
+	width: 100%;
+	padding: 20px;
+	font-size: 22px;
+	background-color: red;
+	color: rgb(153, 0, 0);
+}
+
+/* page position : FLOAT.1 */
+
+.float {
+	height: 170px;
+	width: 170px;
+	background-color: rgb(255, 232, 128);
+	border: 2px solid rgb(255, 196, 0);
+	margin: 10px;
+	float: left;
+	text-align: center;
+	font-size: 22px;
+}
+
+.dernier {
+	height: 170px;
+	width: 170px;
+	background-color: rgb(255, 232, 128);
+	border: 2px solid rgb(255, 196, 0);
+	margin-top: 20px;
+	margin: 10px;
+	text-align: center;
+	font-size: 22px;
+}
+
+/* page position : FLOAT.1 */
+
+.zone {
+	height: 70px;
+	background-color: #333;
+}
+
+.zone1, .zone2, .zone3, .zone4 {
+	height: 250px;
+	width: 25%;
+	float: left;
+}
+
+.zone1 {
+	background-color: rgb(248, 46, 56);
+}
+
+.zone2 {
+	background-color: rgb(255, 115, 0); 
+}
+
+.zone3 {
+	background-color: rgb(255, 187, 0);
+}
+
+.zone4 {
+	background-color: rgb(255, 217, 0);
+}
+
+/* page position : FLEXBOX.1 */
+
+/* FIN DE PAGE POSITION */
+
+/* DÉBUT DE LA PAGE LIENS */
+
+.ancre {
+	text-align: center;
+	padding: 100px;
+}
+
+.ancre a {
+	margin: 8px;
+	padding: 5px 10px; 
+	background-color: #2c3e50;
+	color: #fff;
+	border-radius: 15px;
+	box-shadow: 0px 0px 10px 3px rgb(151, 151, 151);
+	text-decoration: none;
+}
+
+.ancre a:hover {
+	box-shadow: none;
+	transition-duration: 0.5s;
+	text-shadow: 1px 5px 10px rgb(151, 151, 151);
+}
+
+/* le menu dans l'id */
+
+#menu nav {
+	background: transparent;
+	border: none;
+}
+
+#menu ul {
+	list-style: none;
+	text-align: center;
+}
+
+#menu ul li {
+	display: inline-block;
+}
+
+#menu nav a {
+	padding: 10px;
+	color: grey;
+	text-decoration: none;
+	background: #ddd;
+	transition: 0.75s ease-in;
+}
+
+#menu nav a:hover {
+	color: #fff;
+	background: #006699;
+}
+
+/* menu avec menus déroulants */
+
+#menuDeroulant {
+	height: 650px;
+}
+
+#menuDeroulant nav {
+	background: transparent;
+	border: none;
+	width: 90%;
+	margin: 0 auto;
+}
+
+#menuDeroulant nav ul li {
+	list-style: none;
+	width: 20%;
+	float: left;
+}
+
+#menuDeroulant ul ul {
+	display: none;
+}
+
+#menuDeroulant nav ul li ul li {
+	border-top: 1px solid #464646;
+	width: 100%;
+}
+
+#menuDeroulant nav li {
+	background: #ccc;
+}
+
+#menuDeroulant nav li a {
+	display: block;
+	padding: 4px 0;
+}
+
+#menuDeroulant ul {
+	text-align: center;
+}
+
+#menuDeroulant nav ul.niveau1 li.sousMenu:hover ul.niveau2 {
+	display: block;
+}
+
+/* FIN DE LA PAGE DES LIENS */

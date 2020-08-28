@@ -8,7 +8,7 @@
      <!-- les mots clefs utiles pour les moteurs de recherche moins utilisées de nos jours -->
     <meta name="keywords" content="HTML, CSS, Justine Périnel, Colombbus, Suresnes, premier site, 2020">
     <meta name="author" content="Justine Périnel">
-    <title>PremierSITE - Liens du menu</title>
+    <title>PremierSITE - Les liens</title>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lemonada&family=Oswald&display=swap" rel="stylesheet"> 
     <!-- LES ICÔNES EMBARQUÉES DEPUIS FONT AWESOME -->
     <script src="https://kit.fontawesome.com/c194d650bf.js" crossorigin="anonymous"></script>
@@ -57,9 +57,71 @@
     </nav>
 
     <main>
-        <h2>Liens du menu - <i class="fas fa-images"></i></h2>
-                
-        <div class="clear"></div>
+        <h2>Les liens - <i class="fas fa-anchor"></i></h2>
+        <div class="ancre">
+            <a href="#liens">Les liens</a>
+            <a href="#menu">Un menu</a>
+            <a href="#menu-deroulant">Un menu déroulant</a>
+        </div>                
+        <br><br><br><br><br><br>
+
+        <section id="liens">
+            <h3>Les liens</h3>
+            <a href="https://codepen.io/" target="_blank" title="Le site de CodePen">Aller sur le site de CodePen</a><br>
+            <a href="https://www.psg.fr/" target="_blank" title="Site du PSG">Aller sur le site du PSG</a><br>
+            <a href="documents/planning20-21_suresnes.pdf" target="_blank" title="Planning Colombbus">Télécharger le planning provisoire Colombbus</a>
+        </section>
+        <br><br><br><br><br><br>
+
+        <section id="menu">
+            <h3>Un menu</h3>
+            <nav>
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Parcours</a></li>
+                    <li><a href="#">Réalisation</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+        <br><br><br><br><br><br>
+
+        <section id="menuDeroulant">
+            <h3>Un menu déroulant</h3>
+            <nav>
+                <ul class="niveau1">
+                    <li><a href="#" title="Accueil">Accueil</a></li>
+
+                    <li class="sousMenu">
+                        <a href="#" title="Formation">Formation</a>
+                        <ul class="niveau2">
+                            <li><a href="#" title="Étudiants">Étudiants</a></li>
+                            <li><a href="#" title="Emploi du temps">Emploi du temps</a></li>
+                            <li><a href="#" title="Recherche d'emploi">Recherche d'emploi</a></li>
+                            <li><a href="#" title="Documents">Documents</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#" title="Informations">Informations</a></li>
+
+                    <li class="sousMenu">
+                        <a href="#" title="Cours">Cours</a>
+                        <ul class="niveau2">
+                            <li><a href="#" title="Internet">Internet</a></li>
+                            <li><a href="#" title="HTML/CSS">HTML/CSS</a></li>
+                            <li><a href="#" title="CMS">CMS</a></li>
+                            <li><a href="#" title="Stats">Stats</a></li>
+                            <li><a href="#" title="Réseaux sociaux">Réseaux sociaux</a></li>
+                            <li><a href="#" title="Référencement">Référencement</a></li>
+                            <li><a href="#" title="Photoshop">Photoshop</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#" title="Mon CV">Mon CV</a></li>
+                </ul>
+            </nav>
+        </section>
+
     </main> <!-- fin de main  -->
 
     <footer> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia blanditiis repudiandae eaque veniam dolores nesciunt omnis fugit iste tenetur ducimus optio numquam itaque expedita vitae nihil, libero rerum. Impedit, excepturi?</p></footer>
