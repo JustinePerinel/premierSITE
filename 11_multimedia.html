@@ -57,11 +57,47 @@
     </nav>
 
     <main>
-        <h2>Multimedia - <i class="fas fa-images"></i></h2>
+        <h2>Multimedia - <i class="fas fa-microphone-alt"></i></h2>
+        <section class="videoFond">
+            <h3>Une vidéo en fond</h3>
+            <!-- le navigateur va, par défaut, le plus souvent, bloquer les contenus audio et video. Voilà pourquoi il est préférable de mettre les outils de lecture, la barre de contrôle de la vidéo -->
+            <div class="videoTexte">
+                <!-- l'attribut muted est un bon moyen de contourner le non-lancement de la video mais il n'y aura pas de son. -->
+                <video autoplay loop controls>
+                    <source src="video/videoBackground.mp4">
+                </video>
+                <p>Une vidéo en noir et blanc</p>
+            </div>
+        </section>
+        <br><br><hr>
+
+        <section>
+            <h3>Une vidéo intégrée depuis Youtube</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/LBHYhvOHgvc" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        <br><hr>
+
+        <section class="audio">
+            <h3>Audios, les sons</h3>
+            <h4>Format .mp3</h4>
+            <br>
+            <audio src="audio/sf_ambi_oiseaux_campagne_01.mp3" controls>
+                <p>Votre navigateur ne prend pas en charge la balise audio</p>
+            </audio>
+
+            <h4>Format ogg</h4>
+            <br>
+            <audio controls>
+                <source src="audio/son.ogg" type="audio/ogg">
+                <source src="audio/son.mp3" type="audio/mpeg">
+            </audio>
+
+            
+        </section>
                 
         <div class="clear"></div>
     </main> <!-- fin de main  -->
 
-    <footer> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia blanditiis repudiandae eaque veniam dolores nesciunt omnis fugit iste tenetur ducimus optio numquam itaque expedita vitae nihil, libero rerum. Impedit, excepturi?</p></footer>
+    <footer><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia blanditiis repudiandae eaque veniam dolores nesciunt omnis fugit iste tenetur ducimus optio numquam itaque expedita vitae nihil, libero rerum. Impedit, excepturi?</p></footer>
 </body>
 </html>

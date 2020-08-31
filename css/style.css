@@ -144,8 +144,9 @@ nav a {
 	text-decoration: none;
 	font-size: 20px;
 	font-family: 'Oswald', sans-serif;
-	transition: 0.5s; 
+	transition: 0.5s;
 }
+
 /* la transition sur le a marche avec le a:hover, contrôle la durée en secondes ou en millisecondes de la durée d'affichage de l'animation avec le survol*/
 
 nav a:hover {
@@ -703,7 +704,7 @@ img[src="img/toureiffel.jpg"] {
 	font-size: 22px;
 }
 
-/* page position : FLOAT.1 */
+/* page position : FLOAT.2 */
 
 .zone {
 	height: 70px;
@@ -834,3 +835,171 @@ img[src="img/toureiffel.jpg"] {
 }
 
 /* FIN DE LA PAGE DES LIENS */
+
+/* LA PAGE MULTIMEDIAS */
+
+/* video.1  */
+.videoFond {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.videoFond video {
+	width: 80%;
+	position: absolute;
+	z-index: 1;
+}
+
+.videoTexte {
+	/* on décale l'élément par rapport à sa position normale */
+	position: relative;
+	width: 100%;
+	height: 500px;
+}
+
+.videoFond p {
+	position: absolute;
+	z-index: 2;
+	width: 500px;
+	margin: auto;
+	background: rgba(255, 255, 255, 0.6);
+	left: 250px;
+	top: 150px;
+	padding: 20px;
+	font-size: 120%;
+	border-radius: 15px;
+	text-align: center;
+}
+
+/* video.2 */
+
+iframe[src="https://www.youtube.com/embed/LBHYhvOHgvc"] {
+	width: 100%;
+	height: 600px;
+}
+
+iframe[allowfullscreen] {
+	width: 100%;
+}
+
+/* audio.1 */
+
+.audio {
+	text-align: center;
+}
+
+/* LA FIN DE LA PAGE DES MULTIMEDIAS */
+
+/* DÉBUT DE LA PAGE DES ANIMATIONS */
+
+/* section infoBulle */
+
+/* camel case, casse différenciée */
+.infoBulle {
+	height: 250px;
+	width: 500px;
+	margin: auto;
+	padding-top: 15px;
+	background: #444; 
+	box-shadow: 0 0 50px #222 inset;
+}
+
+.infoBulle p {
+	text-align: center;
+	padding-top: 30px;
+}
+
+.infoBulle a {
+	color: #ccc;
+	text-decoration: none;
+	border-radius: 3px;
+	padding: 5px 15px;
+	text-shadow: 0 -2px 0 black;
+}
+
+.infoBulle a:hover {
+	color: white;
+	background: rgba(0, 0, 0, 0.4);
+	text-shadow: 0 1px 2px black;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+	cursor: help;
+}
+
+.infoBulle a span {
+	position: absolute;
+	padding: 15px;
+	margin-top: 23px;
+	margin-left: -35px; 
+	background: rgba(141, 141, 141, 0.9);
+	border-radius: 13px;
+	/* le contenu de span disparaît grâce à cette ligne */
+	opacity: 0;
+	color: #09c;
+	transition: .25s;
+	/* mise à l'échelle. Scale(0) fait aussi disparaître le contenu de span */
+	transform: scale(0) rotateZ(-12deg);
+}
+
+.infoBulle a:hover span {
+	opacity: 1;
+	transform: scale(1) rotate(0);
+}
+
+.infoBulle a span::before {
+	/* ce truc sert à compléter le dessin de l'infoBulle */
+	content: "";
+	position: absolute;
+	top: -6px;
+	left: 7px;
+	border-bottom: 6px solid rgba(141, 141, 141, 0.9);
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+}
+
+/* section imgEffets */
+
+.imgEffets {
+	width: 302px;
+	height: 320px;
+	margin: 70px auto;
+}
+
+.imgEffets li {
+	width: 141px;
+	/* on fabrique le carré qui contient une image */
+	height: 150px;
+	margin: 5px;
+	float: left;
+	list-style: none;
+}
+
+/* le 3e li est clear both */
+.imgEffets li:nth-child(3) {
+	clear: both;
+}
+
+.imgEffets img {
+	/* on contrôle la position des éléments car on joue sur leur empilement */
+	position: absolute;
+	/* toutes les images sont empilées en bas */
+	z-index: 1;
+	/* on cale l'image dans un bloc de 150px */
+	height: 150px;
+	box-shadow: 0 0 3px black;
+	/* cubib-bezier commence par 0 et se termine par 1 et entre ces deux valeurs nous mettons nos propres valeurs */
+	transition: .5s cubic-bezier(0,3,.4,1);
+}
+
+.imgEffets li:hover img {
+	/* l'image sur le hover sur la li passe au 1er plan  */
+	z-index: 2;
+	transform: scale(1.5);
+	box-shadow: 0 0 10px black;
+}
+
+
+.imgEffets:hover li:not(:hover) img {
+	/* dans la partie en survolement .imgEffets, on passe les li qui ne sont pas survolées en niveau de gris et avec un fitre flou */
+	filter: grayscale(1) blur(1px);
+}
+/* FIN DE LA PAGE ANIMATIONS */
