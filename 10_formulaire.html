@@ -57,9 +57,120 @@
     </nav>
 
     <main>
-        <h2>Formulaire - <i class="fas fa-images"></i></h2>
-                
+        <h2>Formulaire - <i class="fas fa-sign-in-alt"></i></h2>
+        <form action="formulaire.php" method="POST">
+            <!-- 1er champ de formulaire -->
+            <fieldset>
+                <label for="pseudo">Pseudo *</label>
+                <input type="text" name="pseudo" id="pseudo" placeholder="Votre pseudo" required>
+            </fieldset>
+
+            <fieldset>
+                <label for="prenom">Prénom</label>
+                <input type="text" name="prenom" id="prenom" placeholder="Votre prénom" required>
+            </fieldset>
+
+            <fieldset>
+                <label for="mdp">Mot de passe</label>
+                <input type="password" name="mdp" id="mdp" placeholder="Votre mot de passe" required>
+            </fieldset>
+
+            <fieldset>
+                <label for="email">Courriel</label>
+                <input type="email" name="email" id="email" placeholder="Votre courriel" required>
+            </fieldset>
+
+            <fieldset>
+                <label for="cv">Votre CV en .pdf</label>
+                <input type="file" id="docpicker" accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+            </fieldset>
+
+            <fieldset>
+                <label for="fruit">Quels sont vos fruits préférés ?</label>
+                <input type="checkbox" name="fruit" id="orange"> <span class="rouge">Orange</span>
+                <input type="checkbox" name="fruit" id="fraise"> <span class="rouge">Fraise</span>
+                <input type="checkbox" name="fruit" id="kiwi"> <span class="rouge">Kiwi</span>
+                <input type="checkbox" name="fruit" id="cerise"> <span class="rouge">Cerise</span>
+            </fieldset>
+
+            <fieldset>
+                <label for="legume">Si vous devez sauver un légume de la destruction : lequel ?</label> <br>
+                <select name="legume" id="legume">
+                    <option value="P">Poireaux</option>
+                    <option value="C">Carotte</option>
+                    <option value="N">Navet</option>
+                </select>
+            </fieldset>
+
+
+            <fieldset>
+                <label for="message">Message</label>
+                <textarea name="text" id="message" cols="30" rows="10"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <input type="submit" name="send" id="Envoyer">
+                <input type="reset" name="annuler" value="Annuler">
+            </fieldset>
+
+
+        </form>
+        <!-- fin du formulaire 1-->
+
+        <section class="formulaire">
+
+            <!-- action est l'URL de destination (adresse URL ou un fichier), peut-être vide  -->
+            <!-- method est la façon de faire circuler les données POST ou GET (envoyer ou récupérer) -->
+            <!-- enctype sert à envoyer le fichier correctement, si nous envoyons un fichier (comme un CV, une photo, etc) -->
+            <form action="inscription.php" method="POST" enctype="multipart/form-data">
+
+                <label for="pseudo">Pseudo *</label>
+                <input type="text" name="pseudo" id="pseudo" placeholder="Votre pseudo" required>
+                <br>
+
+                <label for="prenom">Prénom</label>
+                <input type="text" name="prenom" id="prenom" placeholder="Votre prénom" required>
+                <br>
+
+                <label for="password">Mot de passe</label>
+                <input type="password" name="mdp" id="mdp" placeholder="Votre mot de passe" required>
+                <br>
+
+                <label for="email">Courriel</label>
+                <input type="email" name="email" id="email" placeholder="Votre courriel" required>
+                <br>
+
+                <label for="cv">Votre CV en .pdf</label>
+                <input type="file" id="docpicker" accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+                <br>
+
+                <p>Quels sont vos fruits préférés ?</p>
+                <!-- les checkbox ont le même nom et nous passeront les infos plus tard (en php) dans un tableau, exemple : fruits[] -->
+                <label for="orange">Orange</label>
+                <input type="checkbox" name="fruits[]" id="orange" value="orange">
+                <label for="fraise">Fraise</label>
+                <input type="checkbox" name="fruits[]" id="fraise" value="fraise">
+                <label for="orange">Kiwi</label>
+                <input type="checkbox" name="fruits[]" id="kiwi" value="kiwi">
+                <label for="orange">Cerise</label>
+                <input type="checkbox" name="fruits[]" id="cerise" value="cerise">
+                <br>
+
+                <p>Choisissez le légume que vous n'aimez pas : </p>
+                <select name="legumes" id="">
+                    <option value="poireau">Poireaux</option>
+                    <option value="choux de bruxelles">Chou de Bruxelles</option>
+                    <option value="céleri">Céleri</option>
+                    <option value="épinard" selected>Épinards</option>
+                </select>
+
+
+            </form>
+            <!-- fin du formulaire 2 -->
+        </section>
+
         <div class="clear"></div>
+
     </main> <!-- fin de main  -->
 
     <footer> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia blanditiis repudiandae eaque veniam dolores nesciunt omnis fugit iste tenetur ducimus optio numquam itaque expedita vitae nihil, libero rerum. Impedit, excepturi?</p></footer>

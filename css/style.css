@@ -735,6 +735,23 @@ img[src="img/toureiffel.jpg"] {
 
 /* page position : FLEXBOX.1 */
 
+section article.flex {
+	display: flex;
+	flex-direction: row-reverse;
+	text-align: center;
+	line-height: 130px;
+}
+
+
+section article.flex div {
+	height: 150px;
+	width: 150px;
+	background: #7e2f3f;
+	color: #fff;
+	font-size: 50px;
+	margin: 10px;
+}
+
 /* FIN DE PAGE POSITION */
 
 /* DÉBUT DE LA PAGE LIENS */
@@ -835,6 +852,24 @@ img[src="img/toureiffel.jpg"] {
 }
 
 /* FIN DE LA PAGE DES LIENS */
+
+/* LA PAGE DE FORMULAIRE */
+
+form {
+	margin: auto;
+	width: 70%;
+	box-sizing: border-box;
+	padding: 15px;
+	border-radius: 20px;
+	background-color: #006699;
+	color: #ddd;
+}
+
+.rouge {
+	background-color: red;
+}
+
+/* FIN DE LA PAGE DE FORMULAIRE */
 
 /* LA PAGE MULTIMEDIAS */
 
