@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Une page de tableaux</title>
+    <!-- style dans l'en-tête  -->
+    <style>
+        table, td, th {
+            border: 2px solid rgb(48, 155, 119);
+            width: 40%;
+            margin: auto;
+            height: 40px;
+            vertical-align: middle;
+            padding: 5px;
+            border-collapse: collapse;
+        }
+
+        thead, th {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Des tableaux</h1>
+
+    <h2>Premier tableau</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th colspan="2">Téléphone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Tata</th>
+                <td>06 45 01 23 58</td>
+                <td>03 56 58 20 36</td>
+            </tr>
+            <tr>
+                <th>Yoyo</th>
+                <td>06 93 48 12 47</td>
+                <td>01 25 96 47 58</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Un second tableau</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <td>Annie Cordy</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="2">Tél</th>
+                <td>01 25 96 74 23</td>
+            </tr>
+            <tr>
+                <td>06 96 32 14 78</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

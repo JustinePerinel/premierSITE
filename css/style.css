@@ -279,6 +279,146 @@ img[src="img/toureiffel.jpg"] {
 
 /* FIN PAGE IMAGE */
 
+
+/* DEBUT PAGE POSITION */
+
+.centre {
+	height: 200px;
+	width: 200px;
+	background-color: rgb(255, 187, 0);
+	margin: 0 auto;
+}
+
+.absolute {
+	height: 100px;
+	width: 100px;
+	background-color: yellow;
+	position: absolute;
+	top: 30%;
+	left: 10%;
+}
+
+/* quand c'est relatif, c'est par rapport au parent */
+.relative {
+	background-color: rgb(255, 115, 0);
+	width: 500px;
+	height: 500px;
+	position: relative;
+	left: 100px;
+	/* la position relative à la section dans laquelle se toruve cette div (la position est relative au parent) */
+	bottom: 10px;
+}
+/* quand c'est absolute c'est pas rapport au parent sauf si l'élément est danss une position relative */
+.relative div {
+/* contrairement à la div.absolute, cet élément ayant une position absolute étant placé dans une div.relative, cette div est absolue par rapport à son parent et non par rapport à body  */
+	background-color: rgb(255, 217, 0);
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 0;
+	right: 0;
+} 
+
+/* page position : POURCENTAGES */
+
+.trente {
+	width: 30%;
+	padding: 20px;
+	font-size: 22px;
+	background-color: rgb(255, 217, 0);
+	color: orange;
+}
+
+.cinquante {
+	width: 50%;
+	padding: 20px;
+	font-size: 22px;
+	background-color: rgb(255, 187, 0);
+	color: rgb(255, 115, 0);
+}
+
+.cent {
+	width: 100%;
+	padding: 20px;
+	font-size: 22px;
+	background-color: red;
+	color: rgb(153, 0, 0);
+}
+
+/* page position : FLOAT.1 */
+
+.float {
+	height: 170px;
+	width: 170px;
+	background-color: rgb(255, 232, 128);
+	border: 2px solid rgb(255, 196, 0);
+	margin: 10px;
+	float: left;
+	text-align: center;
+	font-size: 22px;
+}
+
+.dernier {
+	height: 170px;
+	width: 170px;
+	background-color: rgb(255, 232, 128);
+	border: 2px solid rgb(255, 196, 0);
+	margin-top: 20px;
+	margin: 10px;
+	text-align: center;
+	font-size: 22px;
+}
+
+/* page position : FLOAT.2 */
+
+.zone {
+	height: 70px;
+	background-color: #333;
+}
+
+.zone1, .zone2, .zone3, .zone4 {
+	height: 250px;
+	width: 25%;
+	float: left;
+}
+
+.zone1 {
+	background-color: rgb(248, 46, 56);
+}
+
+.zone2 {
+	background-color: rgb(255, 115, 0); 
+}
+
+.zone3 {
+	background-color: rgb(255, 187, 0);
+}
+
+.zone4 {
+	background-color: rgb(255, 217, 0);
+}
+
+/* page position : FLEXBOX.1 */
+
+section article.flex {
+	display: flex;
+	flex-direction: row-reverse;
+	text-align: center;
+	line-height: 130px;
+}
+
+
+section article.flex div {
+	height: 150px;
+	width: 150px;
+	background: #7e2f3f;
+	color: #fff;
+	font-size: 50px;
+	margin: 10px;
+}
+
+/* FIN DE PAGE POSITION */
+
 /* LA PAGE DE ZONING */
 /* ZONING 1 */
 #zoning1 {
@@ -613,146 +753,49 @@ img[src="img/toureiffel.jpg"] {
 	padding: 0;
 	margin: 0;
 }
+
 /* FIN PAGE ZONING */
 
-/* DEBUT PAGE POSITION */
+/* DEBUT PAGE TABLEAU */
 
-.centre {
-	height: 200px;
-	width: 200px;
-	background-color: rgb(255, 187, 0);
-	margin: 0 auto;
+.tableau table {
+	border: 2px solid #205d67;
+	border-collapse: collapse;
+	margin: auto;
+	width: 80%;
+	padding: 5px;
 }
 
-.absolute {
-	height: 100px;
-	width: 100px;
-	background-color: yellow;
-	position: absolute;
-	top: 30%;
-	left: 10%;
-}
-
-/* quand c'est relatif, c'est par rapport au parent */
-.relative {
-	background-color: rgb(255, 115, 0);
-	width: 500px;
-	height: 500px;
-	position: relative;
-	left: 100px;
-	/* la position relative à la section dans laquelle se toruve cette div (la position est relative au parent) */
-	bottom: 10px;
-}
-/* quand c'est absolute c'est pas rapport au parent sauf si l'élément est danss une position relative */
-.relative div {
-/* contrairement à la div.absolute, cet élément ayant une position absolute étant placé dans une div.relative, cette div est absolue par rapport à son parent et non par rapport à body  */
-	background-color: rgb(255, 217, 0);
-	width: 100px;
-	height: 100px;
-	position: absolute;
-	top: 0;
-	right: 0;
-} 
-
-/* page position : POURCENTAGES */
-
-.trente {
-	width: 30%;
-	padding: 20px;
-	font-size: 22px;
-	background-color: rgb(255, 217, 0);
-	color: orange;
-}
-
-.cinquante {
-	width: 50%;
-	padding: 20px;
-	font-size: 22px;
-	background-color: rgb(255, 187, 0);
-	color: rgb(255, 115, 0);
-}
-
-.cent {
-	width: 100%;
-	padding: 20px;
-	font-size: 22px;
-	background-color: red;
-	color: rgb(153, 0, 0);
-}
-
-/* page position : FLOAT.1 */
-
-.float {
-	height: 170px;
-	width: 170px;
-	background-color: rgb(255, 232, 128);
-	border: 2px solid rgb(255, 196, 0);
-	margin: 10px;
-	float: left;
+.tableau td {
+	border: 2px solid #205d67;
+	padding: 10px;
 	text-align: center;
-	font-size: 22px;
+	vertical-align: middle;
 }
 
-.dernier {
-	height: 170px;
-	width: 170px;
-	background-color: rgb(255, 232, 128);
-	border: 2px solid rgb(255, 196, 0);
-	margin-top: 20px;
-	margin: 10px;
+.tableau tbody td {
+	text-align: left;
+}
+
+.tableau thead, .tableau tfoot {
+	background-color: #d0e3fa;
+	border: 5px solid #6495ed;
 	text-align: center;
-	font-size: 22px;
 }
 
-/* page position : FLOAT.2 */
-
-.zone {
-	height: 70px;
-	background-color: #333;
-}
-
-.zone1, .zone2, .zone3, .zone4 {
-	height: 250px;
-	width: 25%;
-	float: left;
-}
-
-.zone1 {
-	background-color: rgb(248, 46, 56);
-}
-
-.zone2 {
-	background-color: rgb(255, 115, 0); 
-}
-
-.zone3 {
-	background-color: rgb(255, 187, 0);
-}
-
-.zone4 {
-	background-color: rgb(255, 217, 0);
-}
-
-/* page position : FLEXBOX.1 */
-
-section article.flex {
-	display: flex;
-	flex-direction: row-reverse;
+.tableau caption {
+	background: #d0e3fa;
+	border: 1px solid #6495ed;
+	height: 50px;
+	font-size: 25px;
 	text-align: center;
-	line-height: 130px;
+	padding-left: 5px;
+	color: #6495ed;
+	line-height: 45px;
 }
 
 
-section article.flex div {
-	height: 150px;
-	width: 150px;
-	background: #7e2f3f;
-	color: #fff;
-	font-size: 50px;
-	margin: 10px;
-}
-
-/* FIN DE PAGE POSITION */
+/* FIN PAGE TABLEAU */
 
 /* DÉBUT DE LA PAGE LIENS */
 
@@ -856,18 +899,40 @@ section article.flex div {
 /* LA PAGE DE FORMULAIRE */
 
 form {
-	margin: auto;
-	width: 70%;
+	margin: 0 auto;
+	width: 60%;
 	box-sizing: border-box;
 	padding: 15px;
 	border-radius: 20px;
-	background-color: #006699;
-	color: #ddd;
+	background-color: #2d5c7f;
+	color: #d0e3fa;
+}
+
+label {
+	margin: 20px 10px;
+}
+
+form p {
+	margin: 10px;
+}
+
+/* On interdit le redimensionnement de textarea */
+textarea {
+	resize: none;
 }
 
 .rouge {
 	background-color: red;
+	color: rgb(240, 240, 240);
+	padding: 0 2px;
 }
+
+
+label[for="orange"], label[for="kiwi"], label[for="fraise"], label[for="cerise"] {
+	background-color: red;
+	color: #fff;
+}
+
 
 /* FIN DE LA PAGE DE FORMULAIRE */
 

@@ -146,24 +146,32 @@
 
                 <p>Quels sont vos fruits préférés ?</p>
                 <!-- les checkbox ont le même nom et nous passeront les infos plus tard (en php) dans un tableau, exemple : fruits[] -->
-                <label for="orange">Orange</label>
+                <label for="orange" class="rouge">Orange</label>
                 <input type="checkbox" name="fruits[]" id="orange" value="orange">
-                <label for="fraise">Fraise</label>
+                <label for="fraise" class="rouge">Fraise</label>
                 <input type="checkbox" name="fruits[]" id="fraise" value="fraise">
-                <label for="orange">Kiwi</label>
+                <label for="orange" class="rouge">Kiwi</label>
                 <input type="checkbox" name="fruits[]" id="kiwi" value="kiwi">
-                <label for="orange">Cerise</label>
+                <label for="orange" class="rouge">Cerise</label>
                 <input type="checkbox" name="fruits[]" id="cerise" value="cerise">
                 <br>
 
                 <p>Choisissez le légume que vous n'aimez pas : </p>
+                <label for="legumes"></label>
                 <select name="legumes" id="">
                     <option value="poireau">Poireaux</option>
                     <option value="choux de bruxelles">Chou de Bruxelles</option>
                     <option value="céleri">Céleri</option>
                     <option value="épinard" selected>Épinards</option>
                 </select>
+                <br>
 
+                <label for="message">Votre commentaire</label>
+                <textarea name="message" id="message" cols="35" rows="10" placeholder="Dîtes nous ce que vous en pensez !"></textarea>
+                <br>
+
+                <input type="submit" name="Envoyer">
+                <input type="reset" name="Annuler">
 
             </form>
             <!-- fin du formulaire 2 -->
