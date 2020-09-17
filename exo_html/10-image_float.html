@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petit exercice de float</title>
+    <!-- style dans l'en-tête -->
+    <style>
+        body {
+            background-color: azure;
+        }
+
+        main {
+            background-color: #fff;
+            margin: auto;
+            width: 900px;
+            padding: 10px;
+        }
+
+        h1 {
+            padding: 0px;
+        }
+
+        /* MEDIA QUERIES  */
+
+        @media (max-width: 600px) {
+            main {
+                width: 100%;
+                background-color: #fff;
+            }
+
+            div#conteneur {
+                width: 400px;
+                min-height: 400px;
+            }
+
+            div#conteneur p {
+                width: 300px;
+            }
+
+            div#audrey {
+                width: 400px;
+                min-height: 500px;
+            }
+
+            div#audrey p {
+                width: 300px;
+            }
+            
+            div#correction {
+                width: 400px;
+                min-height: 400px;
+            }
+
+            img {
+                height: 20px;
+                width: 20px;
+            }
+        }
+
+        /* FIN DES QUERIES */
+
+
+        /* mon exo */
+        #conteneur {
+            width: 600px;
+            margin: auto;
+            background-color: rgb(182, 225, 252);
+            min-height: 350px;
+            padding: 0 10px;
+        }
+
+        #conteneur h2 {
+            margin-bottom: 0;
+        }
+
+        #conteneur p {
+            float: left;
+            width: 500px;
+        }
+
+        #conteneur img{
+            float: left;
+            height: 50px;
+            width: 50px;
+            padding: 10px;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        /* correction d'audrey */
+
+        #audrey {
+            width: 600px;
+            margin: auto;
+            background-color: rgb(182, 225, 252);
+            min-height: 400px;
+            padding: 0 10px;
+        }
+
+        #audrey img {
+            height: 50px;
+            width: 50px;
+            float: left;
+        }
+
+        #audrey p {
+            float: left;
+            width: 500px;
+        }
+
+        /* correction du prof  */
+
+        #correction {
+            background-color: blanchedalmond;
+            margin: auto;
+            width: 600px;
+            min-height: fit-content;
+            padding: 0 10px;
+            box-sizing: border-box;
+        }
+
+        #correction .a-droite {
+            float: right;
+        }
+
+        #correction .a-gauche {
+            float: left;
+        }
+
+        #correction img {
+            height: 50px;
+            width: 50px;
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <div id="conteneur">
+                <h1>Images en float</h1>
+                <h2>Faire flotter l'image à droite :</h2>
+                <p>Un paragraphe avec une image qui flotte à droite. Un paragraphe avec une image qui flotte à droite. Un paragraphe avec une image qui flotte à droite. Un paragraphe avec une image qui flotte à droite. </p>
+                <img src="../img/star.png" alt="PremierSITE : une image d'étoile">
+        
+            <div class="clear"></div>
+        
+                <h2>Faire flotter l'image à gauche :</h2>
+                <img src="../img/star.png" alt="PremierSITE : une image d'étoile">
+                <p>Un paragraphe avec une image qui flotte à gauche. Un paragraphe avec une image qui flotte à gauche. Un paragraphe avec une image qui flotte à gauche. Un paragraphe avec une image qui flotte à gauche. </p>
+        </div>
+        
+        <div class="clear"></div>
+        
+        <div id="audrey">
+            <h1>Image en float</h1>
+            <section>
+                <h2>Faire flotter l'image à droite</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo atque harum iusto soluta adipisci earum ullam ut quas quae eum temporibus alias ipsam, voluptate omnis, veritatis sunt veniam nostrum officiis!</p>
+                <img src="../img/star.png" alt="PremierSITE : une image d'étoile">
+            </section>
+            <div class="clear"></div>
+            <section>
+                <h2>Faire flotter l'image à gauche</h2>
+                <img src="../img/star.png" alt="PremierSITE : une image d'étoile">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum et corrupti temporibus ipsum, provident eaque dolor quos sit magni earum dignissimos in itaque deleniti odit laborum quas accusantium laudantium fugiat? lorem*2</p>
+            </section>
+        </div>
+        
+        <div class="clear"></div>
+        
+        <div id="correction">
+            <h1>Image en float</h1>
+                <p>Faire flotter l'image à droite</p>
+                <p>
+                    <img src="../img/star.png" alt="PremierSITE : une image d'étoile" class="a-droite">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo atque harum iusto soluta adipisci earum ullam ut quas quae eum temporibus alias ipsam, voluptate omnis, veritatis sunt veniam nostrum officiis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nihil, pariatur deserunt voluptates quaerat vel officia, nemo quod tenetur in minima placeat earum alias cumque fugit quas enim vero explicabo?Dolorum, animi assumenda! Nemo ad possimus eveniet odio. Fugit fugiat ex nam culpa natus reprehenderit cumque nulla exercitationem, vitae a vero expedita, necessitatibus iusto inventore architecto at recusandae quod. Quia?
+                </p>
+        
+                <div class="clear"></div>
+        
+                <p>Faire flotter l'image à gauche</p>
+                <p>
+                    <img src="../img/star.png" alt="PremierSITE : une image d'étoile" class="a-gauche">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum et corrupti temporibus ipsum, provident eaque dolor quos sit magni earum dignissimos in itaque deleniti odit laborum quas accusantium laudantium fugiat? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi blanditiis earum ex corrupti labore error in dignissimos, doloribus hic, perspiciatis nam beatae necessitatibus? Molestiae mollitia ratione eveniet qui facere assumenda.Est ipsum accusantium corrupti non odit, esse, recusandae sequi autem veritatis repellendus consequuntur officiis, vero quisquam soluta labore doloremque commodi natus quae incidunt debitis deserunt id aliquam! Sapiente, explicabo dolores?
+                </p>
+        </div>
+    </main>
+</body>
+</html>
