@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sélecteurs CSS</title>
+    <!-- STYLE -->
+    <style>
+        
+        /* 
+
+        1. L'ASTÉRISQUE (tous les éléments HTML de la page) 
+
+        on peut également cibler tous les sélecteurs enfants d"un élément
+        #container * {
+            border: 2px solid black;
+        }
+        (à utiliser le moins possible)
+        */
+        * {
+            box-sizing: border-box;
+        }
+
+        /*
+
+        2. LE SYMBOLE # POUR CIBLER UN ÉLÉMENT PAR SON ID 
+
+        */
+
+        #container {
+            width: 960px;
+            margin: auto;
+            background: rgb(228, 174, 183);
+        }
+
+        /* 
+        
+        3. LE SÉLECTEUR DE CLASSE QUE L'ON PEUT UTILISER PLUSIEURS FOIS DANS LA MÊME PAGE 
+        
+        */
+
+        .error {
+            background: red;
+            color: #fff;
+        }
+
+        /* 
+        
+        4. LES SÉLÉCTEURS DESCENDANTS POUR CIBLER LES A DANS LES LI ET SEULEMENT CEUX LA  
+        
+        */
+
+        li a {
+            text-decoration: none;
+        }
+
+        /* 
+        
+        5. LE SELECTEUR DE TYPE POUR CIBLER TOUS LES ÉlÉMENT D'UNE PAGE  
+        
+        */
+
+        ul {
+            background: rgb(160, 117, 124);
+        }
+
+        /* 
+        
+        6. LES PSEUDO-CLASSES 
+        
+        */
+
+        a:link {
+            color: rgb(253, 219, 186);
+        }
+
+        a:visited {
+            color: rgb(253, 227, 201);
+        }
+
+        /* 
+        
+        7. LE SÉLÉCTEUR ADJACENT
+        il ne sélectionne que l'élement qui est précédé par l'élément ciblé
+        
+        */
+
+        ul + p {
+            background: rgb(147, 147, 197);
+        }
+
+        /* 
+        
+        8. LE SÉLÉCTEUR D'ENFANT DIRECT 
+        (surtout quand on fera du JS)
+        
+        */
+
+        div#listing > ul {
+            border: 5px solid blue;
+            background: cyan;
+        }
+
+        /* 
+        
+        9. Ce combinatur frère est proche de x + y mais moins stricte
+        
+        */
+        
+        h3 ~ p {
+            text-transform: uppercase;
+        }
+
+        /* 
+        
+        10.LE SÉLÉCTEUR D'ATTRIBUT 
+        
+        */
+        a[title] {
+            background-color: #000;
+            color: #fff;
+        }
+
+        /* 
+        
+        11. TOUTES LES BALISES QUI CONTIENNENT UN CHEMIN VERS LE LIEN CIBLÉ
+        
+        */
+
+        a[href="https://lemonde.fr"] {
+            background: maroon;
+        }
+
+        /* 
+        
+        
+        12. LA VALEUR QUI SUIT L'ÉTOILE DOIT APPARAITRE QUELQUE PART DANS LA VALEUR DE L'ATTRIBUT, on cherche la chîne de caractères
+        il est possible d'en mettre deux de suite, séparées par une virgule. 
+
+        */
+
+        a[href*="mac"] {
+            font-style: italic;
+            text-transform: uppercase;
+        }
+
+        /* 13. TODO */
+
+        /* 14. TODO */
+
+        /* 15. TODO */
+
+        /* 16. TODO */
+
+        /*
+        
+        17. DES PSEUDO CLASSES POUR CIBLER DES ÉlÉMENTS
+        
+        */
+
+        input[type=radio]:checked + label {
+            background-color: rgb(56, 141, 113);
+        }
+
+        /*  18. */
+
+        /* 
+        
+        19.PSEUDO-CLASSE D'ACTION UTILISATEUR :hover
+        
+        */
+
+        a:hover {
+            border-bottom: 1px solid red;
+            /* text-decoration: underline; */
+        }
+
+        /* 20. PSEUDO CLASSE DE NÉGATION */
+
+        div:not(#container) {
+            padding: 50px;
+            color: rgb(31, 7, 53);
+        }
+
+        /* 21. PSEUDO ÉLÉMENT élément::first-smthg */
+
+        p::first-line {
+           font-weight: bold;
+        }
+
+        p#lettrine::first-letter {
+            font-size: 2em;
+            float: left;
+            padding: 5px;
+        }
+
+        /* 22. PSEUDO CLASSE : element:nth-child() */
+
+        #courses li:nth-child(2) {
+           background: green;
+           color: #fff; 
+        }
+
+        /* 23. Sélectionner à partir du dernier*/
+
+        #departements li:nth-last-child(12) {
+            background: #fff;
+        }
+
+        /* 24. */
+
+        /* 25. */
+        
+        /* 26. */
+
+        ul#departements li {
+            border-top: 1px solid rgb(54, 35, 47);
+            border-bottom: 1px solid rgb(54, 35, 47);
+            padding: 2px;
+        }
+
+        ul#departements li:first-child {
+            border-top: none;
+        }
+
+        /* 27. element:last-child */
+
+        ul#courses > li:last-child {
+            font-family: cursive;
+        }
+
+        ul#departements li:last-child {
+            border-bottom: none;
+        }
+
+        ul#mini-menu {
+            width: 200px;
+            background: rgb(139, 126, 126);
+            color: lightpink;
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        #mini-menu li {
+            padding: 20px;
+            border-bottom: 1px solid rgb(196, 185, 185);
+            border-top: 1px solid #3c3c3c;
+        }
+
+        #mini-menu li:first-child {
+            border-top: none;
+        }
+
+        #mini-menu li:last-child {
+            border-bottom: none;
+        }
+
+        /* 28. element:only-child*/
+
+        article p:only-child {
+            color: rgb(22, 150, 22);
+        }
+
+        /* 29. element:first-of-type*/
+
+        article ul:first-of-type li:nth-child(2) {
+            font-weight: bold;
+        }
+
+        p + ul li:last-child {
+            color: mediumaquamarine;
+        }
+
+        article ul:first-of-type li:nth-last-child(1) {
+            font-size: 50px;
+        }
+
+
+        /* il existe plusieurs façons de mettre des puces */
+        #departements {
+            list-style: url(../img/1200px-Flag_of_France.svg.png);
+        }
+
+        ol li {
+            list-style: upper-roman;
+        }
+
+        #sous-liste li {
+            list-style: lower-roman;
+        }
+
+        #sous-liste #sous-liste-2 li {
+            list-style: georgian;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Les sélecteurs CSS à connaître</h1>
+        <p>il y a une <span class="error">erreure </span>dans cette phrase</p>
+        <p>Et dans celle là <span class="error">aussie</span>.</p>
+        <hr>
+        <ul>
+            <li><a href="#" title="lien 1">Rubrique 1</a></li>
+            <li><a href="#">Rubrique 2</a></li>
+            <li><a href="#">Rubrique 3</a></li>
+            <li><a href="#" title="mac">Rubrique 4</a></li>
+        </ul>
+        <p>un lien vers le <a href="https://macbidouille.com" target="_blank">site de mon choix</a></p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium quidem, nesciunt ad minima laudantium deleniti, ipsa dolor iusto inventore quod suscipit animi incidunt, fugit minus dicta eum voluptas consequatur assumenda.</p>
+        <p>Et <a href="https://lemonde.fr">ici,</a> un lien vers le journal le Monde</p>
+        <p><a href="https://www.maccosmetics.fr/">Vers le site de Mac</a></p>
+        <ul id="courses">
+            <li>Pain</li>
+            <li>Vin</li>
+            <li>Boursin</li>
+            <li>Raisin</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint consequatur itaque libero esse sunt vitae necessitatibus natus, provident voluptas rerum odit, deleniti officiis reprehenderit tempora cumque. Error maxime ratione vitae.</p>
+        
+        <h2>Des département français</h2>
+        <ul id="departements">
+            <li>01 - Ain - Bourg-en-bresse</li>
+            <li>02 - Aisne - Laon </li>       
+            <li>03 - Allier - Moulins </li>       
+            <li>04 - Alpes-de-Haute-Provence - Digne-les-bains</li>        
+            <li>05 - Hautes-alpes - Gap</li>        
+            <li>06 - Alpes-maritimes - Nice</li>        
+            <li>07 - Ardèche - Privas</li>        
+            <li>08 - Ardennes - Charleville-mézières</li>        
+            <li>09 - Ariège - Foix</li>        
+            <li>10 - Aube - Troyes</li>
+            <li>11- Aude - Carcassonne</li>
+            <li>12 - Aveyron - Rodez</li>
+            <li>13 - Bouches-du-Rhône - Marseille</li>
+            <li>14 - Calvados - Caen</li>
+            <li>15 - Cantal - Aurillac</li>
+            <li>16 - Charente - Angoulême</li>
+            <li>17 - Charente-maritime - La rochelle</li>
+            <li>18 - Cher - Bourges</li>
+            <li>19 - Corrèze - Tulle</li>
+            <li>2A - Corse-du-sud - Ajaccio</li>
+            <li>2B - Haute-Corse - Bastia</li>
+            <li>21 - Côte-d'Or - Dijon</li>
+            <li>22 - Côtes-d'Armor - Saint-brieuc</li>
+            <li>23 - Creuse - Guéret</li>
+            <li>24 - Dordogne - Périgueux</li>
+            <li>25 - Doubs - Besançon</li>
+            <li>26 - Drôme - Valence</li>
+            <li>27 - Eure - Évreux</li>
+            <li>28 - Eure-et-loir - Chartres</li>
+            <li>29 - Finistère - Quimper</li>
+            <li>30 - Gard - Nîmes</li>
+            <li>31 - Haute-garonne - Toulouse</li>
+            <li>32 - Gers - Auch</li>
+            <li>33 - Gironde - Bordeaux</li>
+            <li>34 - Hérault - Montpellier</li>
+            <li>35 - Ille-et-vilaine - Rennes</li>
+            <li>36 - Indre - Châteauroux</li>
+            <li>37 - Indre-et-loire - Tours</li>
+            <li>38 - Isère - Grenoble</li>
+            <li>39 - Jura - Lons-le-saunier</li>
+            <li>40 - Landes - Mont-de-marsan</li>
+            <li>41 - Loir-et-cher - Blois</li>
+            <li>42 - Loire - Saint-étienne</li>
+            <li>43 - Haute-loire - Le puy-en-velay</li>
+            <li>44 - Loire-atlantique - Nantes</li>
+            <li>45 - Loiret - Orléans</li>
+            <li>46 - Lot - Cahors</li>
+            <li>47 - Lot-et-garonne - Agen</li>
+            <li>48 - Lozère - Mende</li>
+            <li>49 - Maine-et-loire - Angers</li>
+            <li>50 - Manche - Saint-lô</li>
+            <li>51 - Marne - Châlons-en-champagne</li>
+            <li>52 - Haute-marne - Chaumont</li>
+            <li>53 - Mayenne - Laval</li>
+            <li>54 - Meurthe-et-moselle - Nancy</li>
+            <li>55 - Meuse - Bar-le-duc</li>
+            <li>56 - Morbihan - Vannes</li>
+            <li>57 - Moselle - Metz</li>
+            <li>58 - Nièvre - Nevers</li>
+            <li>59 - Nord - Lille</li>
+            <li>60 - Oise - Beauvais</li>
+            <li>61 - Orne - Alençon</li>
+            <li>62 - Pas-de-calais - Arras</li>
+            <li>63 - Puy-de-dôme - Clermont-ferrand</li>
+            <li>64 - Pyrénées-atlantiques - Pau</li>
+            <li>65 - Hautes-Pyrénées - Tarbes</li>
+            <li>66 - Pyrénées-orientales - Perpignan</li>
+            <li>67 - Bas-rhin - Strasbourg</li>
+            <li>68 - Haut-rhin - Colmar</li>
+            <li>69 - Rhône - Lyon</li>
+            <li>70 - Haute-saône - Vesoul</li>
+            <li>71 - Saône-et-loire - Mâcon</li>
+            <li>72 - Sarthe - Le mans</li>
+            <li>73 - Savoie - Chambéry</li>
+            <li>74 - Haute-savoie - Annecy</li>
+            <li>75 - Paris - Paris</li>
+            <li>76 - Seine-maritime - Rouen</li>
+            <li>77 - Seine-et-marne - Melun</li>
+            <li>78 - Yvelines - Versailles</li>
+            <li>79 - Deux-sèvres - Niort</li>
+            <li>80 - Somme - Amiens</li>
+        </ul>
+
+        <hr>
+        <h2>Un mini-menu</h2>
+        <ul id="mini-menu">
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+        </ul>
+
+        <hr>
+        <h2>Des paragraphes</h2>
+        <article>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur consectetur voluptatibus provident corporis modi vitae vero enim nulla harum ratione! Error fugiat dignissimos saepe laudantium possimus quae, provident accusantium placeat?</p>
+        </article>
+        <article>
+            <p>Assumenda illo officiis consectetur dolores eligendi alias eveniet minus autem nihil! Praesentium quasi optio architecto consequatur unde tempore tempora, neque beatae delectus odio vero fugit possimus cum deleniti dolor reiciendis!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nisi neque est repellat ut, dolor beatae cum labore in temporibus fuga sequi et rerum facilis hic distinctio illum qui eos!</p>
+        </article>
+        <hr>
+
+        Element de liste 1<h2>Suite ...</h2>
+        <article>
+            <p>Mon paragraphe ici</p>
+            <ul>
+                <li>Element de liste 1</li>
+                <li>Element de liste 2</li>
+            </ul>
+            
+            <ul>
+                <li>Element de liste 3</li>
+                <li>Element de liste 4</li>
+            </ul>
+        </article>
+
+        <h3>Un titre</h3>
+        <div id="listing">
+            <ul>
+                <li>Afrique
+                    <ul>
+                        <li>Congo</li>
+                        <li>Maroc</li>
+                        <li>Sénégal</li>
+                    </ul>
+                </li>
+                <li>Amériques
+                    <ul>
+                        <li>Canada</li>
+                        <li>Mexique</li>
+                        <li>Venezuela</li>
+                    </ul>
+                </li>
+                <li>Asie
+                    <ul>
+                        <li>Chine</li>
+                        <li>Mongolie</li>
+                        <li>Japon</li>
+                    </ul>
+                </li>
+                <li>Europe
+                    <ul>
+                        <li>Espagne</li>
+                        <li>France</li>
+                        <li>Royaume-Uni</li>
+                    </ul>
+                </li>
+                <li>Océanie
+                    <ul>
+                        <li>Australie</li>
+                        <li>Fidji</li>
+                        <li>Nouvelle-Zélande</li>
+                    </ul>
+                </li>
+            </ul>
+        
+        </div> <!-- fin de div #listing  -->
+        
+        <form action="#" method="POST">
+            <input type="radio" name="rad" value="bouton radio">
+            <label for="rad">Bouton radio</label>
+        </form>
+
+        <p id="lettrine">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, iste fuga. Nemo nulla minus libero ipsam ipsum accusamus nesciunt. Accusantium autem beatae, excepturi dolore sit culpa quo aliquid dolores modi.</p>
+
+        <hr>
+
+        <ol>
+            <li>coucou 1
+                <ol id="sous-liste">
+                    <li>coucou 1.1
+                        <ol id="sous-liste-2">
+                            <li>Coucou 1.1.1</li>
+                            <li>Coucou 1.1.2</li>
+                        </ol>
+                    </li>
+                    <li>coucou 1.2</li>
+                    <li>coucou 1.3</li>
+                    <li>coucou 1.4</li>
+                    <li>coucou 1.5</li>
+                </ol>
+            </li>
+            <li>coucou 2</li>
+            <li>coucou 3</li>
+            <li>coucou 4</li>
+            <li>coucou 5</li>
+            <li>coucou 6</li>
+            <li>coucou 7</li>
+            <li>coucou 8</li>
+            <li>coucou 9</li>
+            <li>coucou 10</li>
+        </ol>
+
+
+    </div><!-- fin de container -->
+</body>
+</html>

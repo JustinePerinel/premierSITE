@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Une page de menus</title>
+    <style>
+        #menu-1 {
+            background-color: mediumvioletred;
+            height: 50px;
+            line-height: 50px;
+            font-size: 1.2em;
+        }
+
+        #menu-1 a {
+            color: mistyrose;
+            text-decoration: none;
+            padding: 15px 50px;
+        }
+
+        #menu-1 a.active {
+            background: rgb(104, 14, 71);
+            color: rgb(230, 140, 197);
+        }
+
+        #menu-1 a:hover {
+            background: rgb(112, 70, 93);
+            color: hotpink;
+        }
+    </style>
+</head>
+<body>
+    <div id="menu-1">
+        <a href="#" class="active">Home</a>
+        <a href="#">News</a>
+        <a href="#">Contact</a>
+        <a href="#">About</a>
+    </div>
+</body>
+</html>
