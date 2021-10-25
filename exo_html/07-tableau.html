@@ -6,6 +6,10 @@
     <title>Une page de tableaux</title>
     <!-- style dans l'en-tête  -->
     <style>
+        body {
+            background-color: rgb(200, 243, 225);
+        }
+
         table, td, th {
             border: 2px solid rgb(48, 155, 119);
             width: 40%;
@@ -14,6 +18,15 @@
             vertical-align: middle;
             padding: 5px;
             border-collapse: collapse;
+        }
+
+        th {
+            background-color: green;
+            color: #fff;
+        }
+
+        tbody tr:nth-of-type(even) {
+            background-color: #fff;
         }
 
         thead, th {
@@ -44,6 +57,16 @@
                 <th>Yoyo</th>
                 <td>06 93 48 12 47</td>
                 <td>01 25 96 47 58</td>
+            </tr>
+            <tr>
+                <th>Grand</th>
+                <td>07 58 63 21 54</td>
+                <td>01 49 86 35 74</td>
+            </tr>
+            <tr>
+                <th>Chapeau</th>
+                <td>07 58 63 21 54</td>
+                <td>01 49 86 35 74</td>
             </tr>
         </tbody>
     </table>

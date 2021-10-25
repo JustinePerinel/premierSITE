@@ -144,7 +144,7 @@ nav a {
 	text-decoration: none;
 	font-size: 20px;
 	font-family: 'Oswald', sans-serif;
-	transition: 0.5s;
+	transition: 10s;
 }
 
 /* la transition sur le a marche avec le a:hover, contrôle la durée en secondes ou en millisecondes de la durée d'affichage de l'animation avec le survol*/
@@ -205,6 +205,7 @@ button {
 	position: fixed;
 	bottom: 40px;
 	right: 20px;
+	cursor: pointer;
 }
 
 /* FIN DU STYLE PRINCIPAL */
@@ -224,6 +225,14 @@ blockquote i {
 	font-size: 300%;
 	color: #6acafc;
 	vertical-align: middle;
+}
+
+cite::before {
+	content: "«";
+}
+
+cite::after {
+	content: "»";
 }
 
 /* FIN STYLE PAGE TEXTE */
@@ -525,28 +534,25 @@ section article.flex div {
 	font-size: 1.6em;
 }
 
-#zoning3 section {
+#zoning3 #sgauche {
 	margin: 0;
     float: left;
     background-color: rgb(255, 159, 164);
     width: 398px;
     height: 400px;
+	border-right: 2px solid rgb(248, 46, 56);
 }
 
-#zoning3 #border {
-	float: left;
-	width: 2px;
-	height: 400px;
-	background-color: rgb(248, 46, 56);
-}
-
-#zoning3 div {
-    background-color: rgb(255, 214, 216);
-    width: 800px;
-    height: 10px;
+#zoning3 #sdroite {
+	margin: 0;
+    float: left;
+    background-color: rgb(255, 159, 164);
+    width: 400px;
+    height: 400px;
 }
 
 #zoning3 footer {
+	margin-top: 20px;
     background-color: rgb(253, 83, 91);
 }
 
@@ -693,7 +699,7 @@ section article.flex div {
 .zoning6 nav a {
 	border: none;
 	background: none;
-	padding: 0 20px 0 20px;
+	padding: 0 20px;
 	margin: 0;
 	font-family: 'Righteous', cursive;
 	color: #fff;
@@ -709,7 +715,7 @@ section article.flex div {
     float: left;
 }
 
-.zoning6 .a, .b {
+.zoning6 .a, .zoning6 .b {
     width: 37.5%;
     float: left;
     height: 205px;
@@ -730,7 +736,7 @@ section article.flex div {
     height: 205px;
 }
 
-.zoning6 .c, .d, .e, .f {
+.zoning6 .c, .zoning6 .d, .zoning6 .e, .zoning6 .f {
     width: 18.75%;
     height: 90px;
     float: left;
@@ -801,6 +807,22 @@ section article.flex div {
 
 
 /* FIN PAGE TABLEAU */
+
+/* PAGE LISTE */
+
+.fromage li {
+	list-style: disc url(../img/cheese.png) inside;
+}
+
+ol li {
+	list-style-type: georgian;
+	margin-left: 25px;
+}
+
+dt {
+	font-weight: 900;
+	color: rgb(1, 122, 122);
+}
 
 /* DÉBUT DE LA PAGE LIENS */
 
@@ -1039,7 +1061,8 @@ iframe[allowfullscreen] {
 	border-radius: 13px;
 	/* le contenu de span disparaît grâce à cette ligne */
 	opacity: 0;
-	color: #09c;
+	color: rgb(7, 34, 43);
+	text-shadow: none;
 	transition: .25s;
 	/* mise à l'échelle. Scale(0) fait aussi disparaître le contenu de span */
 	transform: scale(0) rotateZ(-12deg);
@@ -1054,7 +1077,7 @@ iframe[allowfullscreen] {
 	/* ce truc sert à compléter le dessin de l'infoBulle */
 	content: "";
 	position: absolute;
-	top: -6px;
+	top: -4px;
 	left: 7px;
 	border-bottom: 6px solid rgba(141, 141, 141, 0.9);
 	border-left: 6px solid transparent;
