@@ -1115,7 +1115,7 @@ iframe[allowfullscreen] {
 	height: 150px;
 	box-shadow: 0 0 3px black;
 	/* cubib-bezier commence par 0 et se termine par 1 et entre ces deux valeurs nous mettons nos propres valeurs */
-	transition: .5s cubic-bezier(0,3,.4,1);
+	transition: .5s /* cubic-bezier(0,3,.4,1) */;
 }
 
 .imgEffets li:hover img {
