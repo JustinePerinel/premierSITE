@@ -811,7 +811,7 @@ section article.flex div {
 /* PAGE LISTE */
 
 .fromage li {
-	list-style: disc url(../img/cheese.png) inside;
+	list-style: disc inside url(../img/cheese.png);
 }
 
 ol li {

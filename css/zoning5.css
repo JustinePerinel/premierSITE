@@ -3,7 +3,7 @@
  margin: auto;
  width: 800px;
  color: white;
- height: 730px;
+ height: 760px;
  text-align: center;
  font-size: 1.3em;
  font-weight: bold;
@@ -21,10 +21,11 @@
 #zoning5 nav {
     background: #FFCC85;
     height: 50px;
+    border-bottom: 10px solid black;
 }
 
 #zoning5 section {
-    margin: 20px;
+    margin: 20px 20px 0 20px;
     height: 500px;
 }
 
@@ -45,8 +46,18 @@
 #zoning5 footer {
     background: #FFBC71;
     height: 60px;
+    margin: 0 20px;
+
 }
 
 #zoning5 p {
-    display: inline-block;
+    display: block;
+}
+
+
+
+.bleu {
+    background-color: blue;
+    height: 10px;
+    margin: 0;
 }
